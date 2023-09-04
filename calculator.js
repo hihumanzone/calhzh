@@ -17,7 +17,7 @@ window.onload = function() {
                 try {
                     result.textContent = eval(calculation);
                 } catch {
-                    result.textContent = 'Error!';
+                    result.textContent = 'Error 69';
                 }
             } else {
                 if (result.textContent === '0') {
