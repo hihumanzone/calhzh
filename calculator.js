@@ -4,9 +4,21 @@ window.onload = function() {
         button.addEventListener('click', function() {
             var result = document.getElementById('result');
             if (button.textContent === 'C') {
-                result.textContent = 0;
+                result.textContent = '0';
+            } else if (button.textContent === 'BS') {
+                result.textContent = result.textContent.slice(0, -1);
+                if (result.textContent === '') {
+                    result.textContent = '0';
+                }
             } else if (button.textContent === '=') {
-                result.textContent = eval(result.textContent);
+                let calculation = result.textContent;
+                calculation = calculation.replace(/\^/g, '**');
+                calculation = calculation.replace(/[^-()\d/*+.]/g, '');
+                try {
+                    result.textContent = eval(calculation);
+                } catch {
+                    result.textContent = 'Error!';
+                }
             } else {
                 if (result.textContent === '0') {
                     result.textContent = button.textContent;
