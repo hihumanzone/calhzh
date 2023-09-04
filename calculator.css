@@ -45,9 +45,8 @@ body {
     }
 
     .screen {
-        height: 90px;
-        line-height: 90px;
-        font-size: 54px;
+        line-height: 10px;
+        font-size: 20px;
     }
 
     .buttons button {
