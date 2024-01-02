@@ -1,0 +1,18 @@
+{
+  "name": "Calculator",
+  "short_name": "Cal",
+  "description": "Its just a Calculator",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000",
+  "lang": "en",
+  "display_override": [
+    "standalone",
+    "window-controls-overlay"
+  ],
+  "categories": [
+    "utilities"
+  ],
+  "iarc_rating_id": "E"
+}
